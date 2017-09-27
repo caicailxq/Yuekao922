@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+      android:background="?attr/mainBackground"
+    tools:context="com.bawei.yuekao922.MainActivity">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:background="@color/tou">
+     <ImageView
+
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:src="@drawable/a1"
+         android:layout_margin="5dp"
+         />
+         <ImageView
+
+             android:layout_width="80dp"
+             android:layout_height="35dp"
+             android:src="@drawable/a2"
+             android:layout_marginTop="5dp"
+             android:layout_marginLeft="100dp"
+             />
+
+         <ImageView
+             android:onClick="Riye"
+             android:layout_width="35dp"
+             android:layout_height="25dp"
+             android:src="@drawable/a3"
+             android:layout_marginTop="10dp"
+             android:layout_marginLeft="110dp"
+             />
+         
+     </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+
+    </android.support.v4.view.ViewPager>
+
+    <com.limxing.xlistview.view.XListView
+        android:id="@+id/xlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.limxing.xlistview.view.XListView>
+
+
+</LinearLayout>
